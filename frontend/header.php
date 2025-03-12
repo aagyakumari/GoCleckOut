@@ -1,28 +1,19 @@
-<?php
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <link rel="stylesheet" href="./css/header.css">
-</head>
-
-<body>
-    <div class="nav-bar">
-        <img src="" placeholder="LOGO" class="logo" onclick="location.reload()" alt="image here">
-        <ul class="header-nav">
-            <li><a href="home.php" class="nav-text">Home</a></li>
-            <li><a href="#" class="nav-text">Categories</a></li>
-            <li><a href="#" class="nav-text">Offers</a></li>
-            <li><a href="#" class="nav-text">Sell</a></li>
-        </ul>
-
-        <ul class="header-nav">
-            <li><a href="login/login_portal.php?sign_in=true" class="nav-text">Sign In</a></li>
-            <li><a href="login/login_portal.php?sign_in=false" class="nav-text">Sign Up</a></li>
-        </ul>
+<!-- header.php -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.php">
+            <img src="assets/clecklogo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+            GoCleckOut
+        </a>
+        <div class="collapse navbar-collapse justify-content-center">
+            <input type="text" class="search-bar" placeholder="Hinted search text">
+        </div>
+        <div class="d-flex align-items-center gap-4">
+            <a href="cart.php" class="me-4">
+                <img src="assets/cart-icon.png" alt="Cart" width="28" height="28">
+            </a>
+            <a href="login/login_portal.php?sign_in=true" class="me-4">Sign in</a>
+            <a href="login/login_portal.php?sign_in=false" class="btn btn-primary px-4">Sign up</a>
+        </div>
     </div>
-</body>
-
-</html>
+</nav>
